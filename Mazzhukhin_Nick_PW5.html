@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Practical 5</title>
+  <style>
+  body {
+            font-family: 'Roboto', sans-serif;
+}
+
+ {
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  margin: 10px;
+}
+    img {
+      float: right;
+      max-width: 400px;
+	  background-color: lightgreen;
+	  padding: 10px;
+
+    }
+    image-block {
+      display: block;
+	  padding: 10px;
+    }
+  
+    nav {
+      background-color: lightblue;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+	  background-color: lightblue;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+	  background-color: lightblue;
+      margin-right: 20px;
+    }
+	
+	footer {
+	background-color: lightblue;
+	display: block;
+	text-align: center; 
+	clear: both;
+	padding: 20px;
+	}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Practical 5</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#sectionA">Question №1</a></li>
+        <li><a href="#sectionB">Question №2</a></li>
+		<li><a href="#sectionC">Question №3</a></li>
+		<li><a href="#sectionD">Question №4</a></li>
+		<li><a href="#sectionE">Question №5</a></li>
+		
+      </ul>
+    </nav>
+  </header>
+  <main>
+  
+    <article>
+	<img src="IP5-4.png" alt="IP5-4">
+      <h2 id="sectionA">№1.	What is a box model in CSS?</h2>
+      <p>  The box model in CSS describes how elements are rendered on a web page. It consists of four components: 
+Content (actual content); Padding (the space between); Border (surrounding the padding and content) and Margin (The space outside the border) The box-sizing property defines how the total width and height of an element are calculated.</p>
+	      <h2 id="sectionB">№2.	What is a clearfix hack?</h2>
+      <p>  It is used to solve a common issue with floated elements. The clearfix hack ensures that the parent container expands to accommodate the floated elements.</p>
+	  	  <h2 id="sectionC">№3.	What is a margin collapse? </h2>
+      <p>  Margin Collapse occurs when the top and bottom margins of block-level elements combine into a single margin. The resulting margin size is the largest of the individual margins (or just one of them if they are equal). This behavior can lead to unexpected spacing between elements. </p>
+      <h2 id="sectionD">№4.	What was the problem with achieving Holy Grail layout?</h2>
+	        <p>  The Holy Grail layout is a page layout with equal height columns. This layout was difficult to achieve due to limitations in CSS and HTML. Equal height columns, especially when content changed, was difficult to achieve without hacks.</p>
+	  <h2 id="sectionE">№5.	What are the modern ways to achieve Holy Grail layout?</h2>
+      <p> Use CSS Grid (provides a robust solution for creating complex layouts, including the Holy Grail layout) or Flexbox (can  be used with some conceits, like grouping elements). However, CSS Grid is a better choice.
+Responsive Attributes: Use responsive attributes to adapt the layout based on screen size.</p>
+     <div class="image-block">
+		<img src="IP5-2.png" alt="IP5-2">
+		
+		<img src="IP5-1.png" alt="IP5-1">
+		<img src="IP5-3.png" alt="IP5-3">
+	 </div>
+		  
+	</article>
+  
+      
+    
+    
+ 
+  </main>
+  <footer>
+    <p>Mazzhukhin Mikalai</p>
+    <p>Web-design</p>
+    <p>23:37:16</p>
+    <p>April 29, 2024</p>
+  </footer>
+</body>
+</html>

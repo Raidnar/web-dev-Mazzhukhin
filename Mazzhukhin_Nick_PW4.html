@@ -1,0 +1,220 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal HTML Document</title>
+	<style>
+  body {
+            font-family: 'Roboto', sans-serif;
+}
+
+ {
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  margin: 10px;
+}
+#text__headings > div > h1,
+#text__paragraphs {
+}
+
+div:hover {
+  background-color: lightblue; 
+}
+
+{
+  color: #ff0000; lightgreen;
+}
+ul li:nth-child(odd), 
+table tr:nth-child(even) { 
+  background-color: lightgray; 
+}
+
+
+p::first-letter {
+  font-size: 200%; 
+}
+
+
+::selection {
+  background: lightred;
+}
+
+ul li::before {
+  content: '\2192'; 
+  padding-right: 5px;
+}
+
+#text__paragraphs *:not(p):not(h2) {
+  background-color: #e0e0e0;
+}
+
+
+:is(h1, h2, h3, h4, h5, h6):not(.no-bold) {
+  font-weight: bold; 
+}
+
+</style>
+</head>
+<body id="top">
+
+<main>
+      <section id="text">
+        <header>
+          <h1>Text</h1>
+        </header>
+        <article id="text__headings">
+          <header>
+            <h2>Headings</h2>
+          </header>
+          <div>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </div>
+          <footer>
+            <p><a href="#top">[Top]</a></p>
+          </footer>
+        </article>
+        <article id="text__paragraphs">
+          <header>
+            <h2>Paragraphs</h2>
+          </header>
+          <div>
+		  <h3>What is selector’s specificity and who it’s calculated?</h3>
+		  
+            <p>Specificity refers to the weight or importance of a selector in determining which styles apply to an element. It’s calculated based on the combination of different types of selectors used in a rule. The following factors contribute to specificity (in order of importance):
+Inline styles: Highest specificity; ID selectors: Next highest; Class selectors, pseudo-classes, and attribute selectors: Medium specificity; Type selectors (lowest specificity) and universal selectors.</p>
+			  
+		<h3> What are complex selectors?</h3>
+		
+            <p>Complex selectors allow us to target elements more precisely by combining different selectors.
+			</p>
+			  
+		<h3>What is the difference between pseudo-classes and pseudo-elements?</h3>
+		
+            <p> Pseudo-classes Define special states of elements, such as <code>:hover</code>. They don’t point to an element directly but rather describe its state. Pseudo-elements, like <code>::before</code>, Represent parts of an element. They create virtual elements that don’t exist in the DOM.</p>
+			  
+          </div>
+          <footer>
+            <p><a href="#top">[Top]</a></p>
+          </footer>
+        </article>
+        <article id="text__blockquotes">
+          <header>
+            <h2>Blockquotes</h2>
+          </header>
+          <div>
+            <blockquote>
+              <p>A block quotation is a lengthy excerpt from another author’s work, set apart from the main text as a separate paragraph.</p>
+              <p> It is typically indented from the left margin and starts on a new line.</p>
+            </blockquote>
+          </div>
+          <footer>
+            <p><a href="#top">[Top]</a></p>
+          </footer>
+        </article>
+        <article id="text__lists">
+          <header>
+            <h2>Lists</h2>
+          </header>
+          <div>
+            <h3>Definition list</h3>
+            <dl>
+              <dt>Definition List Title</dt>
+              <dd>A definition list division.</dd>
+            </dl>
+            <h3>Ordered List</h3>
+            <ol>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+            </ol>
+            <h3>Unordered List</h3>
+            <ul>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+            </ul>
+          </div>
+          <footer>
+            <p><a href="#top">[Top]</a></p>
+          </footer>
+        </article>
+        <article id="text__hr">
+          <header>
+            <h2>Horizontal rules</h2>
+          </header>
+          <div>
+            <hr>
+          </div>
+          <footer>
+            <p><a href="#top">[Top]</a></p>
+          </footer>
+        </article>
+        <article id="text__tables">
+          <header>
+            <h2>Tabular data</h2>
+          </header>
+          <table>
+            <caption>Table Caption</caption>
+            <thead>
+              <tr>
+                <th>Table Heading 1</th>
+                <th>Table Heading 2</th>
+                <th>Table Heading 3</th>
+                <th>Table Heading 4</th>
+                <th>Table Heading 5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Table Footer 1</th>
+                <th>Table Footer 2</th>
+                <th>Table Footer 3</th>
+                <th>Table Footer 4</th>
+                <th>Table Footer 5</th>
+              </tr>
+            </tfoot>
+          </table>
+          <footer>
+            <p><a href="#top">[Top]</a></p>
+          </footer>
+        </article>
+	</section>
+</main>
+  
+</body>
+</html>
