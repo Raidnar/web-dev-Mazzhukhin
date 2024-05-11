@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aeaeae;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero img {
+    max-width: 100%;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.news-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.news-item img {
+    max-width: 100%;
+}
+
+.news-item h2 {
+    margin-top: 10px;
+}
+
+.news-item p {
+    margin-bottom: 5px;
+}
+
+.read-more {
+    display: block;
+    text-align: center;
+    background-color: #515151;
+    color: white;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+</style>
+<body>
+
+<header>
+        <div class="logo">Times</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+				<li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="Bankrupt_Britain.jpg" alt="Bankrupt Britain">
+        <h1>One of Britain’s biggest cities is bankrupt. Others fear they will be next</h1>
+        <a href="#" class="read-more">Read More</a>
+    </section>
+
+    <section class="news">
+        <div class="news-item">
+            <img src="Pr6I1.jpg" alt="News 1 Thumbnail">
+            <h2>Global Warming</h2>
+            <p class="meta">Posted on March 21, 2024</p>
+            <p class="excerpt">The causes, effects, and complexities of global warming are important to understand so that we can fight for the health of our planet.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+		<div class="news-item">
+            <img src="Pr6I2.jpg" alt="News 1 Thumbnail">
+            <h2>Secrets of government</h2>
+            <p class="meta">Posted on January 26, 2024</p>
+            <p class="excerpt">information leakage from FBI</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+		<div class="news-item">
+            <img src="Pr6I3.jpg" alt="News 1 Thumbnail">
+            <h2>Sports in France</h2>
+            <p class="meta">Posted on August 16, 2023</p>
+            <p class="excerpt">France won world cup.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+		<div class="news-item">
+            <img src="Pr6I4.jpg" alt="News 1 Thumbnail">
+            <h2>Samsung Heavy Industry</h2>
+            <p class="meta">Posted on December 16, 2023</p>
+            <p class="excerpt">Samsung built their first warship</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </section>
+
+</body>
+</html>

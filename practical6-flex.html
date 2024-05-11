@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Layout</title>
+</head>
+<body>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-news {
+    background-color: #bfbfbf;
+    padding: 20px;
+}
+
+.top-news-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-news img {
+    max-width: 100%;
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    flex: 0 0 calc(33.33% - 20px);
+    border: 1px solid #505050;
+    padding: 10px;
+    margin: 10px;
+}
+
+.news-item img {
+    max-width: 100%;
+}
+
+.news-item h2 {
+    margin-top: 10px;
+}
+
+.news-item p {
+    margin-bottom: 5px;
+}
+
+.read-more {
+    display: block;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+aside {
+    order: -1; /* Move sidebar to the beginning */
+}
+
+.sidebar {
+    background-color: #bfbfbf;
+    padding: 20px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+</style>
+
+<header>
+        <div class="logo">Euronews</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+				<li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="top-news">
+        <div class="top-news-content">
+            <img src="Pr6I6.jpg" alt="Breaking News">
+            <h1>Breaking News</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="news-item">
+            <img src="Pr6I5.jpg" alt="News">
+            <h2>New news</h2>
+            <p class="meta">Posted on January 1, 2022</p>
+            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+<div class="news-item">
+            <img src="Pr6I5.jpg" alt="News">
+            <h2>New news</h2>
+            <p class="meta">Posted on December 1, 2023</p>
+            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+		<div class="news-item">
+            <img src="Pr6I5.jpg" alt="News">
+            <h2>New news</h2>
+            <p class="meta">Posted on December 2, 2023</p>
+            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+		<div class="news-item">
+            <img src="Pr6I5.jpg" alt="News">
+            <h2>New news</h2>
+            <p class="meta">Posted on December 3, 2023</p>
+            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </section>
+
+    <aside>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Category №1</a></li>
+                <li><a href="#">Category №2</a></li>
+                <li><a href="#">Category №3</a></li>
+                <li><a href="#">Category №4</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+</body>
+</html>
